@@ -1,0 +1,103 @@
+.contact-container{
+  padding: 85px;
+  display: flex;
+  flex-direction: column;
+  background-color: #DC3702;
+  background-image: url("contact-logo.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  //align-items: center;
+
+  h2{
+    margin: 0;
+  }
+  span{
+    color: #F3F4F7;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 87.5% */
+    letter-spacing: -0.22px;
+    margin-bottom: 50px;
+  }
+  .idea-title{
+    color: #F3F4F7;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.92px;
+  }
+  .site-options{
+    display: flex;
+    width: 55%;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    .site-option{
+      padding: 20px ;
+      background-color: white;
+      border-radius: 90px;
+      margin-bottom: 20px;
+      margin-right: 20px;
+
+      color: #000;
+      text-align: center;
+      font-size: 20px;
+      font-style: normal;
+      line-height: 35px; /* 175% */
+      letter-spacing: -1.4px;
+    }
+    .selected-site{
+      background: black;
+      color: white;
+    }
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+
+    input, textarea{
+      width: 50%;
+      margin-bottom: 90px;
+      border: none;
+      border-bottom: solid 1px white;
+      background-color: transparent;
+      padding: 24px;
+      font-size: 23px;
+      color: white;
+    }
+    input::placeholder, textarea::placeholder{
+      color: #F3F4F7;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: -1.4px;
+    }
+    input:focus-visible, textarea:focus-visible{
+      outline: none;
+    }
+    .attachment{
+      display: flex;
+      cursor: pointer;
+      margin-bottom: 30px;
+
+      span{
+        margin:0;
+        color: #F3F4F7;
+        font-size: 21px;
+        font-weight: 600;
+        letter-spacing: -0.22px;
+      }
+    }
+    button{
+      width: 230px;
+      padding: 20px;
+      border-radius: 100px;
+      background: #F3F4F7;
+      border: none;
+    }
+
+  }
+}

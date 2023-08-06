@@ -1,0 +1,132 @@
+nav {
+  display: flex;
+  position: fixed;
+  padding-bottom: 10%;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  top: 1%;
+  padding-left: 3%;
+  z-index: 1000;
+
+  .nav-options {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    .active {
+      color: #FE5920;
+      border-bottom: solid 1.5px #FE5920;
+      transition: 0.3s;
+    }
+    padding: 25px;
+    span:first-child {
+      margin: 0;
+      margin-right: 8px;
+    }
+    span {
+      margin-left: 64px;
+      font-size: 18px;
+      font-weight: 600;
+      margin-right: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    span:hover {
+      color: #FE5920;
+    }
+    .menu-icon-2 {
+      width: 28px;
+      cursor: pointer;
+    }
+  }
+  .nav-options-contact{
+    color: white;
+    .active{
+      color: white;
+      border-bottom: solid 1.5px white;
+      transition: 0.3s;
+    }
+    span:hover {
+      color: black;
+    }
+
+
+  }
+  .menu-container {
+    width: 6%;
+    padding: 25px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    .menu-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+    .menu-icon-1 {
+      width: 25% !important;
+      cursor: pointer;
+    }
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+
+.side-scroll {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: absolute;
+  right: -45px;
+  top: 400px;
+  transform: rotate(90deg);
+  cursor: pointer;
+  span {
+    font-family: "GT-Walsheim_regular";
+  }
+}
+
+
+footer {
+
+  //width: 100%;
+  background: black;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 25px;
+
+  background-image: url("contact-us/contact-logo.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 18%;
+
+  h2{
+    margin:0;
+    color: #FE5920;
+    font-size: 66px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.92px;
+  }
+  h2:first-child{
+    color: white;
+  }
+  .footer-infos{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    span{
+      margin-right: 10px;
+    }
+  }
+}

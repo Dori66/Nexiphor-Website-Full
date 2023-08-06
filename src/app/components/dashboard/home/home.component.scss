@@ -1,0 +1,72 @@
+.container {
+  height: 100vh;
+  .big-logo {
+    display: flex;
+    justify-content: center;
+
+    img {
+      position: absolute;
+      top: 90px;
+      height: 80vh;
+      text-align: center;
+    }
+
+    .img-1 {
+    }
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 28%;
+
+    span {
+      margin: 0;
+      height: 78px;
+      font-size: 96px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      color: #200E32;
+    }
+
+    span:nth-child(3) {
+      color: #FE5920;
+    }
+  }
+
+
+
+}
+
+.animate__animated.animate__fadeOutRight {
+  animation: customFadeInOut 3s infinite; /* Adjust the duration as needed */
+}
+
+@keyframes customFadeInOut {
+  0%, 100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(35px); /* Adjust the value to the number of pixels you want to fade out */
+  }
+}
+
+.animate__animated.animate__fadeOutLeft {
+  animation: customFadeInOutLeft 3s infinite; /* Adjust the duration as needed */
+}
+
+@keyframes customFadeInOutLeft {
+  0%, 100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-35px); /* Adjust the value to the number of pixels you want to fade out */
+  }
+}
