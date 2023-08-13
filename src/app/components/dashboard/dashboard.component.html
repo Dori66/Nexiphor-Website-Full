@@ -1,30 +1,31 @@
 <nav>
-  <img src="assets/logo.svg">
+  <img class="logo" src="assets/svg/fulllogo_transparent_nobuffer.png">
   <div class="menu-container">
     <span class="menu-title animate__animated animate__fadeInDown"
-          *ngIf="!openedMenu"
-          (click)="openedMenu = !openedMenu">MENU</span>
+    *ngIf="!openedMenu"
+    (click)="openedMenu = !openedMenu">MENU</span>
     <img class="menu-icon-1 animate__animated animate__flipInX"
-         *ngIf="!openedMenu"
-         (click)="openedMenu = !openedMenu"
-         src="assets/menu-icon.svg">
+    *ngIf="!openedMenu"
+    (click)="openedMenu = !openedMenu"
+    src="assets/menu-icon.svg">
   </div>
-  
+
   <div class="nav-options"
-       [ngClass]="{'nav-options-contact': direction == 'contact' }"
-       *ngIf="openedMenu">
-    <span class="animate__animated animate__fadeInDown"
-          [ngClass]="{'active':selectedMenuOption == 'home'}"
-          (click)="menuSelect('home')">HOME</span>
-    <span class="animate__animated animate__fadeInDown"
-          [ngClass]="{'active':selectedMenuOption == 'services'}"
-          (click)="menuSelect('services')">SERVICE</span>
-    <span class="animate__animated animate__fadeInDown"
-          [ngClass]="{'active':selectedMenuOption == 'contact'}"
-          (click)="menuSelect('contact')"> CONTACT</span>
-    <img class="menu-icon-2 animate__animated animate__flipInX" (click)="openedMenu = !openedMenu"
-         src="assets/menu-icon.svg">
-  </div>
+  [ngClass]="{'nav-options-contact': direction == 'contact' }"
+  *ngIf="openedMenu">
+
+  <span class="animate__animated animate__fadeInDown"
+  [ngClass]="{'active':selectedMenuOption == 'home'}"
+  (click)="menuSelect('home')">HOME</span>
+  <span class="animate__animated animate__fadeInDown"
+  [ngClass]="{'active':selectedMenuOption == 'services'}"
+  (click)="menuSelect('services')">SERVICE</span>
+  <span class="animate__animated animate__fadeInDown"
+  [ngClass]="{'active':selectedMenuOption == 'contact'}"
+  (click)="menuSelect('contact')"> CONTACT</span>
+  <img class="menu-icon-2 animate__animated animate__flipInX" (click)="openedMenu = !openedMenu"
+  src="assets/menu-icon.svg">
+</div>
 </nav>
 <div class="main-container">
   <div #home>
@@ -38,14 +39,14 @@
   </div>
 </div>
 <div class="side-scroll"
-     [style.opacity]="opacityValue"
-     (click)="menuSelect('contact')">SCROLL FOR MORE <span>→</span></div>
+[style.opacity]="opacityValue"
+(click)="menuSelect('contact')">SCROLL FOR MORE <span>→</span></div>
 <footer>
   <h2>YOUR IDEAS</h2>
   <h2>OUR DUTY </h2>
 
   <div class="footer-infos">
-    <span>contact@noxcetera.com</span>
+    <span>contact@nexiphor.com</span>
     <span>LinkedIn ICON</span>
     <span>Instagram ICON</span>
     <span>Facebook ICON</span>

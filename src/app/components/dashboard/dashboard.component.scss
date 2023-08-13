@@ -9,6 +9,10 @@ nav {
   padding-left: 3%;
   z-index: 1000;
 
+  .logo{
+    width: 50px;
+  }
+
   .nav-options {
     width: 100%;
     display: flex;
@@ -50,8 +54,6 @@ nav {
     span:hover {
       color: black;
     }
-
-
   }
   .menu-container {
     width: 6%;
