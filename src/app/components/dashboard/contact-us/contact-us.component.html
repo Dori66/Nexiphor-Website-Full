@@ -1,38 +1,45 @@
 <div class="contact-container">
-
-  <h1 class="idea-title">HAVE AN IDEA?</h1>
-  <span>I'm interested in...</span>
-
-
-  <div class="site-options">
-    <div class="site-option" [ngClass]="{'selected-site':selectedSites?.includes('site-from-scratch')}" (click)="addSite('site-from-scratch')">Site from scratch</div>
-    <div class="site-option" [ngClass]="{'selected-site':selectedSites?.includes('app-from-scratch')}"  (click)="addSite('app-from-scratch')">Application from scratch</div>
-    <div class="site-option" [ngClass]="{'selected-site':selectedSites?.includes('ui/ux')}"  (click)="addSite('ui/ux')">UX/UI Design</div>
-    <div class="site-option" [ngClass]="{'selected-site':selectedSites?.includes('web-development')}"  (click)="addSite('web-development')">Web Development</div>
-    <div class="site-option" [ngClass]="{'selected-site':selectedSites?.includes('mobile-development')}"  (click)="addSite('mobile-development')">Mobile Development</div>
-    <div class="site-option" [ngClass]="{'selected-site':selectedSites?.includes('other')}"  (click)="addSite('other')">Other</div>
-  </div>
-
-  <div class="form">
-
-    <input type="text" placeholder="Your name">
-    <input type="text" placeholder="Your email">
-    <textarea type="text" placeholder="Tell us about your project"></textarea>
-    <span>Project Budget(USD)</span>
+  <div class="background">
+    <h1 class="idea-title">HAVE AN IDEA?</h1>
+    <span>I'm interested in...</span>
     <div class="site-options">
-      <div class="site-option" [ngClass]="{'selected-site':selectedBudget == '10'}" (click)="chooseBudget('10')"> < 10k</div>
-      <div class="site-option" [ngClass]="{'selected-site':selectedBudget == '10 - 20'}" (click)="chooseBudget('10 - 20')">10 - 20k</div>
-      <div class="site-option" [ngClass]="{'selected-site':selectedBudget == '40 - 50'}" (click)="chooseBudget('40 - 50')">40 - 50k</div>
-      <div class="site-option" [ngClass]="{'selected-site':selectedBudget == '50 - 100'}" (click)="chooseBudget('50 - 100')">50 - 100k</div>
-      <div class="site-option" [ngClass]="{'selected-site':selectedBudget == 'other'}" (click)="chooseBudget('other')">Other</div>
+      <div class="site-option" [ngClass]="{'selected-site':selectedSites?.includes('site-from-scratch')}"
+        (click)="addSite('site-from-scratch')">Site from scratch</div>
+      <div class="site-option" [ngClass]="{'selected-site':selectedSites?.includes('app-from-scratch')}"
+        (click)="addSite('app-from-scratch')">Application from scratch</div>
+      <div class="site-option" [ngClass]="{'selected-site':selectedSites?.includes('ui/ux')}"
+        (click)="addSite('ui/ux')">UX/UI Design</div>
+      <div class="site-option" [ngClass]="{'selected-site':selectedSites?.includes('web-development')}"
+        (click)="addSite('web-development')">Web Development</div>
+      <div class="site-option" [ngClass]="{'selected-site':selectedSites?.includes('mobile-development')}"
+        (click)="addSite('mobile-development')">Mobile Development</div>
+      <div class="site-option" [ngClass]="{'selected-site':selectedSites?.includes('other')}"
+        (click)="addSite('other')">Other</div>
     </div>
-    <div class="attachment">
-      <img src="assets/attachment.svg">
-      <span (click)="fileInput.click()" style="cursor: pointer;">Attachment</span>
-      <input type="file" (change)="uploadFile($event.target)" #fileInput style="display: none;">
+
+    <div class="form">
+      <input type="text" placeholder="Your name">
+      <input type="text" placeholder="Your email">
+      <textarea type="text" placeholder="Tell us about your project"></textarea>
+      <span>Project Budget(USD)</span>
+      <div class="site-options">
+        <div class="site-option" [ngClass]="{'selected-site':selectedBudget == '10'}" (click)="chooseBudget('10')">10k
+        </div>
+        <div class="site-option" [ngClass]="{'selected-site':selectedBudget == '10 - 20'}"
+          (click)="chooseBudget('10 - 20')">10 - 20k</div>
+        <div class="site-option" [ngClass]="{'selected-site':selectedBudget == '40 - 50'}"
+          (click)="chooseBudget('40 - 50')">40 - 50k</div>
+        <div class="site-option" [ngClass]="{'selected-site':selectedBudget == '50 - 100'}"
+          (click)="chooseBudget('50 - 100')">50 - 100k</div>
+        <div class="site-option" [ngClass]="{'selected-site':selectedBudget == 'other'}"
+          (click)="chooseBudget('other')">Other</div>
+      </div>
+      <div class="attachment">
+        <img src="assets/attachment.svg">
+        <span (click)="fileInput.click()" style="cursor: pointer;">Attachment</span>
+        <input type="file" (change)="uploadFile($event.target)" #fileInput style="display: none;">
+      </div>
+      <button>Send Request</button>
     </div>
-    <button>Send Request</button>
   </div>
-
-
 </div>

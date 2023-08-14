@@ -9,7 +9,7 @@ nav {
   padding-left: 3%;
   z-index: 1000;
 
-  .logo{
+  .logo {
     width: 50px;
   }
 
@@ -19,15 +19,19 @@ nav {
     justify-content: end;
     align-items: flex-start;
     color: white;
+
     .active {
       color: #7FD858;
       transition: 0.3s;
     }
+
     padding: 25px;
+
     span:first-child {
       margin: 0;
       margin-right: 8px;
     }
+
     span {
       margin-left: 64px;
       font-size: 18px;
@@ -36,9 +40,11 @@ nav {
       cursor: pointer;
       transition: 0.3s;
     }
+
     span:hover {
       color: #7FD858;
     }
+
     .menu-icon-2 {
       width: 28px;
       cursor: pointer;
@@ -51,11 +57,13 @@ nav {
     display: flex;
     justify-content: end;
     align-items: flex-start;
+
     .menu-title {
       font-size: 18px;
       font-weight: 600;
       margin-right: 10px;
     }
+
     .menu-icon-1 {
       width: 25% !important;
       cursor: pointer;
@@ -81,60 +89,64 @@ nav {
   top: 400px;
   transform: rotate(90deg);
   cursor: pointer;
+
   span {
     font-family: "GT-Walsheim_regular";
   }
 }
 
-
-footer {
-
-  //width: 100%;
-  background: #7FD858;
-  height: 400px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  color: white;
-  padding: 25px;
-  padding-bottom: 15px;
-
-  background-image: url("../dashboard/../../../assets/icons/logo-white.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 18%;
-
-
-  img{
-    width: 30px;
-    height: 30px;
-    margin-right: 50px;
-    cursor: pointer;
-  }
-  span{
-    color: rgb(0,49,68);
-  }
-
-  h2{
-    margin:0;
-    color: rgb(0,49,68);
-    font-size: 66px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 1.92px;
-  }
-  h2:first-child{
-    color: black;
-  }
-  .footer-infos{
-    position: relative;
-    bottom: 0;
+.background-footer {
+  background: linear-gradient(to top, rgb(0, 49, 68), black) !important;
+  footer {
+    height: 400px;
     display: flex;
-    justify-content: start;
-    align-items: center;
-    span{
-      margin-right: 10px;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+    padding: 25px;
+    padding-bottom: 15px;
+
+    background-image: url("../dashboard/../../../assets/icons/logo-white.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 18%;
+
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 50px;
+      cursor: pointer;
+    }
+
+    span {
+      color: rgb(0, 49, 68);
+    }
+
+    h2 {
+      margin: 0;
+      color: rgb(0, 49, 68);
+      font-size: 66px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 1.92px;
+    }
+
+    h2:first-child {
+      color: black;
+    }
+
+    .footer-infos {
+      position: relative;
+      bottom: 0;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      span {
+        margin-right: 10px;
+      }
     }
   }
 }
