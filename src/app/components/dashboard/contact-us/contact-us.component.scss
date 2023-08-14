@@ -15,7 +15,7 @@
     margin: 0;
   }
   span{
-    color: black;
+    color: #7FD858;
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -49,10 +49,14 @@
       text-align: center;
       font-size: 15px;
       font-weight: 500;
-
+      cursor: pointer;
+    }
+    .site-option:hover{
+        background-color: #7FD858;
+        transition: 0.5s;
     }
     .selected-site{
-      background: black;
+      background: #7FD858;
       color: white;
     }
   }
@@ -87,7 +91,7 @@
 
       span{
         margin:0;
-        color: #F3F4F7;
+        color: #7FD858;
         font-size: 21px;
         font-weight: 600;
         letter-spacing: -0.22px;
@@ -97,8 +101,10 @@
       width: 230px;
       padding: 20px;
       border-radius: 100px;
-      background: #F3F4F7;
+      background: #7FD858;
       border: none;
+      color: white;
+      font-weight: 700;
     }
 
   }

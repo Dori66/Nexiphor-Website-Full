@@ -1,14 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
   styleUrls: ['./contact-us.component.scss']
 })
-export class ContactUsComponent {
+export class ContactUsComponent implements OnInit {
 
   selectedSites : any[]= [];
   selectedBudget:any;
+
+
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
 
   addSite(site:any){
