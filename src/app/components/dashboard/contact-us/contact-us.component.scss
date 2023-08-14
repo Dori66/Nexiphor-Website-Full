@@ -1,31 +1,35 @@
-.contact-container{
+.contact-container {
   padding: 85px;
   display: flex;
   flex-direction: column;
   background: linear-gradient(to bottom, rgb(0, 49, 68), black) !important;
-  
+
   //align-items: center;
 
-  .background{
+  .background {
     background-image: url("logo-1.svg") !important;
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: center;
-    background-size: 50%;}
+    background-size: 50%;
+  }
 
-  h2{
+  h2 {
     margin: 0;
   }
-  span{
+
+  span {
     color: #7FD858;
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
-    line-height: 28px; /* 87.5% */
+    line-height: 28px;
+    /* 87.5% */
     letter-spacing: -0.22px;
     margin-bottom: 50px;
   }
-  .idea-title{
+
+  .idea-title {
     color: #F3F4F7;
     font-size: 96px;
     font-style: normal;
@@ -33,15 +37,16 @@
     line-height: normal;
     letter-spacing: 1.92px;
   }
-  .site-options{
+
+  .site-options {
     display: flex;
     width: 55%;
     justify-content: left;
     flex-wrap: wrap;
     margin-bottom: 40px;
 
-    .site-option{
-      padding: 15px ;
+    .site-option {
+      padding: 15px;
       background-color: white;
       border-radius: 90px;
       margin-bottom: 20px;
@@ -53,20 +58,24 @@
       font-weight: 500;
       cursor: pointer;
     }
-    .site-option:hover{
-        background-color: #7FD858;
-        transition: 0.5s;
+
+    .site-option:hover {
+      background-color: #7FD858;
+      transition: 0.5s;
     }
-    .selected-site{
+
+    .selected-site {
       background: #7FD858;
       color: white;
     }
   }
-  .form{
+
+  .form {
     display: flex;
     flex-direction: column;
 
-    input, textarea{
+    input,
+    textarea {
       width: 50%;
       margin-bottom: 90px;
       border: none;
@@ -76,30 +85,36 @@
       font-size: 23px;
       color: white;
     }
-    input::placeholder, textarea::placeholder{
+
+    input::placeholder,
+    textarea::placeholder {
       color: #F3F4F7;
       font-size: 23px;
       font-style: normal;
       font-weight: 500;
       letter-spacing: -1.4px;
     }
-    input:focus-visible, textarea:focus-visible{
+
+    input:focus-visible,
+    textarea:focus-visible {
       outline: none;
     }
-    .attachment{
+
+    .attachment {
       display: flex;
       cursor: pointer;
       margin-bottom: 30px;
 
-      span{
-        margin:0;
+      span {
+        margin: 0;
         color: #7FD858;
         font-size: 21px;
         font-weight: 600;
         letter-spacing: -0.22px;
       }
     }
-    button{
+
+    button {
       width: 230px;
       padding: 20px;
       border-radius: 100px;
