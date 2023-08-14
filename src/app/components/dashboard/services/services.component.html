@@ -1,3 +1,18 @@
-<div class="services-container">
-  TEST TEST
+<div class="service-container">
+  <div class="container">
+    <h1 class="text-center mb-4">Our Services</h1>
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let service of services">
+        <div class="circle-container mx-auto">
+          <div class="rounded-circle d-flex justify-content-center align-items-center" style="width: 130px; height: 130px;">
+            <i class="fas fa-{{ service.icon }} fa-3x text-primary"></i>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <h5 class="mb-0">{{ service.title }}</h5>
+          <p class="service-description">{{ service.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
