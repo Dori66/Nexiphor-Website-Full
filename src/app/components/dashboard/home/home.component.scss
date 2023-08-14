@@ -35,16 +35,25 @@
     }
 
     span:nth-child(3) {
-      color: #FE5920;
+      color: #7FD858;
     }
   }
+
+   .description-container{
+    position: relative;
+    top: 65%;
+    text-align: center;
+    color: #7FD858;
+    font-weight: 600;
+    font-size: 30px;
+   }
 
 
 
 }
 
 .animate__animated.animate__fadeOutRight {
-  animation: customFadeInOut 3s infinite; /* Adjust the duration as needed */
+  animation: customFadeInOut 2.5s infinite; /* Adjust the duration as needed */
 }
 
 @keyframes customFadeInOut {
@@ -54,12 +63,12 @@
   }
   50% {
     opacity: 0;
-    transform: translateX(35px); /* Adjust the value to the number of pixels you want to fade out */
+    transform: translateX(20px); /* Adjust the value to the number of pixels you want to fade out */
   }
 }
 
 .animate__animated.animate__fadeOutLeft {
-  animation: customFadeInOutLeft 3s infinite; /* Adjust the duration as needed */
+  animation: customFadeInOutLeft 2.5s infinite; /* Adjust the duration as needed */
 }
 
 @keyframes customFadeInOutLeft {
@@ -69,6 +78,6 @@
   }
   50% {
     opacity: 0;
-    transform: translateX(-35px); /* Adjust the value to the number of pixels you want to fade out */
+    transform: translateX(-20px); /* Adjust the value to the number of pixels you want to fade out */
   }
 }

@@ -19,8 +19,7 @@ nav {
     justify-content: end;
     align-items: flex-start;
     .active {
-      color: #FE5920;
-      border-bottom: solid 1.5px #FE5920;
+      color: #7FD858;
       transition: 0.3s;
     }
     padding: 25px;
@@ -37,24 +36,14 @@ nav {
       transition: 0.3s;
     }
     span:hover {
-      color: #FE5920;
+      color: #7FD858;
     }
     .menu-icon-2 {
       width: 28px;
       cursor: pointer;
     }
   }
-  .nav-options-contact{
-    color: white;
-    .active{
-      color: white;
-      border-bottom: solid 1.5px white;
-      transition: 0.3s;
-    }
-    span:hover {
-      color: black;
-    }
-  }
+
   .menu-container {
     width: 6%;
     padding: 25px;
@@ -82,6 +71,7 @@ nav {
 
 
 .side-scroll {
+  color: #7FD858;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   letter-spacing: 2px;
@@ -99,21 +89,32 @@ nav {
 footer {
 
   //width: 100%;
-  background: black;
+  background: #7FD858;
   height: 400px;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   color: white;
   padding: 25px;
+  padding-bottom: 15px;
 
-  background-image: url("contact-us/contact-logo.svg");
+  background-image: url("contact-us/logo-4.svg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: 18%;
 
+
+  img{
+    width: 100px;
+    height: 50px;
+  }
+  span{
+    color: rgb(0,49,68);
+  }
+
   h2{
     margin:0;
-    color: #FE5920;
+    color: rgb(0,49,68);
     font-size: 66px;
     font-style: normal;
     font-weight: 600;
@@ -121,12 +122,13 @@ footer {
     letter-spacing: 1.92px;
   }
   h2:first-child{
-    color: white;
+    color: black;
   }
   .footer-infos{
     position: relative;
     bottom: 0;
     display: flex;
+    align-items: center;
     span{
       margin-right: 10px;
     }
