@@ -15,12 +15,12 @@ export class ServicesComponent {
     {
       title: 'Mobile App Development',
       description: 'Transforming ideas into powerful mobile applications for both iOS and Android platforms. We bring innovation and functionality together to deliver seamless and feature-rich apps that stand out in the app stores.',
-      icon: 'mobile-alt'
+      icon: 'tablet'
     },
     {
       title: 'UI/UX Design',
       description: 'Bringing user-centered design to the forefront, we create interfaces that are not just visually appealing but also intuitive and user-friendly. Our designs ensure a smooth and delightful user experience.',
-      icon: 'pencil-ruler'
+      icon: 'magic'
     },
     {
       title: 'Custom Software Solutions',

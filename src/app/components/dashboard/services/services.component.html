@@ -3,15 +3,18 @@
     <h1 class="text-center mb-4">Our Services</h1>
     <div class="row">
       <div class="col-md-4 mb-4" *ngFor="let service of services">
-        <div class="circle-container mx-auto">
-          <div class="rounded-circle d-flex justify-content-center align-items-center">
-            <i class="fas fa-{{ service.icon }} fa-3x text-primary"></i>
+        <div class="card-container">
+          <div class="circle-container outer-circle mx-auto">
+            <div class="rounded-circle d-flex justify-content-center align-items-center">
+              <div class="small-circle">
+                <i class="fa fa-{{ service.icon }} fa-3x text-primary"></i>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="text-center mt-3 service-card">
-          <h5 class="mb-0">{{ service.title }}</h5>
-          <div class="description-truncated">{{ service.description }}</div>
-          <div class="description-full">{{ service.description }}</div>
+          <h5 class="mb-0 text-center">{{ service.title }}</h5>
+          <div class="card-content">
+            <div class="description-full">{{ service.description }}</div>
+          </div>
         </div>
       </div>
     </div>

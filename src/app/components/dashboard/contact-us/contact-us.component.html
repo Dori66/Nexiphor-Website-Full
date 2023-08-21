@@ -3,18 +3,18 @@
     <h1 class="idea-title">HAVE AN IDEA?</h1>
     <span>I'm interested in...</span>
     <div class="site-options">
-      <div class="site-option" [ngClass]="{'selected-site':selectedSites?.includes('site-from-scratch')}"
+      <div class="site-option" [ngClass]="{'selected-site':selectedSites.includes('site-from-scratch')}"
         (click)="addSite('site-from-scratch')">Site from scratch</div>
-      <div class="site-option" [ngClass]="{'selected-site':selectedSites?.includes('app-from-scratch')}"
+      <div class="site-option" [ngClass]="{'selected-site':selectedSites.includes('app-from-scratch')}"
         (click)="addSite('app-from-scratch')">Application from scratch</div>
-      <div class="site-option" [ngClass]="{'selected-site':selectedSites?.includes('ui/ux')}"
-        (click)="addSite('ui/ux')">UX/UI Design</div>
-      <div class="site-option" [ngClass]="{'selected-site':selectedSites?.includes('web-development')}"
+      <div class="site-option" [ngClass]="{'selected-site':selectedSites.includes('ui/ux')}" (click)="addSite('ui/ux')">
+        UX/UI Design</div>
+      <div class="site-option" [ngClass]="{'selected-site':selectedSites.includes('web-development')}"
         (click)="addSite('web-development')">Web Development</div>
-      <div class="site-option" [ngClass]="{'selected-site':selectedSites?.includes('mobile-development')}"
+      <div class="site-option" [ngClass]="{'selected-site':selectedSites.includes('mobile-development')}"
         (click)="addSite('mobile-development')">Mobile Development</div>
-      <div class="site-option" [ngClass]="{'selected-site':selectedSites?.includes('other')}"
-        (click)="addSite('other')">Other</div>
+      <div class="site-option" [ngClass]="{'selected-site':selectedSites.includes('other')}" (click)="addSite('other')">
+        Other</div>
     </div>
 
     <div class="form">
