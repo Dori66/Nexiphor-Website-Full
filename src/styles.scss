@@ -1,4 +1,5 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Montserrat:ital,wght@0,600;1,600&display=swap');
 
 *{
   font-family: 'Montserrat', sans-serif;
@@ -8,4 +9,6 @@ body, html{
   padding: 0;
   background: rgb(0,49,68);
   transition:  0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+
 }

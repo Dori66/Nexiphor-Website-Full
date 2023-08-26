@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-contact-us',
@@ -10,12 +10,9 @@ export class ContactUsComponent implements OnInit {
   selectedSites : any[]= [];
   selectedBudget:any;
 
-
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
-
-
   addSite(site:any){
     let find = this.selectedSites.findIndex((item: any) => item == site);
     if (find >= 0){
@@ -23,9 +20,6 @@ export class ContactUsComponent implements OnInit {
     }else{
       this.selectedSites.push(site);
     }
-  }
-  chooseBudget(budget: any){
-    this.selectedBudget = budget;
   }
   uploadFile(file: any){
     console.log(file.value)
