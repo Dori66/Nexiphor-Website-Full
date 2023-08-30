@@ -1,8 +1,8 @@
-<div class="contact-container" >
+<div class="contact-container">
   <div class="background">
-    <h1 class="idea-title"  >HAVE AN IDEA?</h1>
-    <span >I'm interested in...</span>
-    <div class="site-options" >
+    <h1 class="idea-title">HAVE AN IDEA?</h1>
+    <span>I'm interested in...</span>
+    <div class="site-options">
       <div class="site-option" [ngClass]="{'selected-site':selectedSites.includes('site-from-scratch')}"
         (click)="addSite('site-from-scratch')">Web Development</div>
       <div class="site-option" [ngClass]="{'selected-site':selectedSites.includes('app-from-scratch')}"
@@ -17,16 +17,18 @@
         Other</div>
     </div>
 
-    <div class="form" >
-      <input type="text" placeholder="Your name">
-      <input type="text" placeholder="Your email">
-      <textarea type="text" placeholder="Tell us about your project"></textarea>
-      <div class="attachment">
-        <img src="assets/attachment.svg">
-        <span (click)="fileInput.click()" style="cursor: pointer;">Attachment</span>
-        <input type="file" (change)="uploadFile($event.target)" #fileInput style="display: none;">
-      </div>
-      <button>Send Request</button>
+    <div class="form">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <input class="form-control" type="text" placeholder="Your name" formControlName="name">
+        <input class="form-control" type="email" placeholder="Your email" formControlName="email">
+        <textarea class="form-control" type="text" placeholder="Tell us about your project" formControlName="message"></textarea>
+        <!-- <div class="attachment">
+          <img src="assets/attachment.svg">
+          <span (click)="fileInput.click()" style="cursor: pointer;">Attachment</span>
+          <input type="file" (change)="uploadFile($event.target)" #fileInput style="display: none;">
+        </div> -->
+        <button type="submit">Send Request</button>
+      </form>
     </div>
   </div>
 </div>

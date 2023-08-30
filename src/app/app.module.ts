@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/dashboard/home/home.component';
 import { ContactUsComponent } from './components/dashboard/contact-us/contact-us.component';
-import { ServicesComponent } from './components/dashboard/services/services.component';
+import { ServicesComponent } from './components/dashboard/services/services.component'
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ServicesComponent } from './components/dashboard/services/services.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
