@@ -1,24 +1,28 @@
 nav {
   display: flex;
-  position: fixed;
-  padding-bottom: 10%;
+
   justify-content: space-between;
   align-items: center;
   width: 95%;
-  top: 1%;
   padding-left: 3%;
   z-index: 1000;
 
   .logo {
     width: 50px;
+    position: fixed;
+    top: 1%;
+
   }
 
   .nav-options {
-    width: 100%;
+    position: fixed;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     color: white;
+    top: 1%;
+    width: auto;
+    right: 5%;
 
     .active {
       color: #7FD858;
@@ -174,13 +178,11 @@ nav {
 @media (max-width: 500px){
   nav {
     display: flex;
-    position: sticky;
     padding-bottom: 10%;
     justify-content: space-between;
     align-items: center;
     width: auto;
-    top: 0;
-    padding-left: 3%;
+    padding-left: 8%;
     z-index: 1000;
 
     .logo {
@@ -188,9 +190,11 @@ nav {
     }
 
     .nav-options {
-      width: 100%;
+      width: auto;
+      position: fixed;
+      right: 3%;
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: flex-start;
       color: white;
 
@@ -262,6 +266,7 @@ nav {
   }
 
   footer{
+    padding-bottom: 20px !important;
     .title-caption{
       font-size: 16px;
     }
@@ -271,6 +276,9 @@ nav {
         margin-right: 15px;
       }
       .email-container{
+        span{
+          text-decoration: none !important;
+        }
         img{
           width:14px !important;
         }

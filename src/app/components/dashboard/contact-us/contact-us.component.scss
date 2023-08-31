@@ -61,13 +61,12 @@
     }
     .site-option:hover{
       transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
     }
-
-    .site-option:hover {
-      background-color: #7FD858;
-      transition: 0.5s;
-    }
+    //
+    //.site-option:hover {
+    //  background-color: #7FD858;
+    //  transition: 0.5s;
+    //}
 
     .selected-site {
       background: #7FD858;
@@ -199,10 +198,10 @@
 
       }
 
-      .site-option:hover {
-        background-color: #7FD858;
-        transition: 0.5s;
-      }
+      //.site-option:hover {
+      //  background-color: #7FD858;
+      //  transition: 0.5s;
+      //}
 
       .selected-site {
         background: #7FD858;

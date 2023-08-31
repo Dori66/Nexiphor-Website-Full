@@ -7,6 +7,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/dashboard/home/home.component';
 import { ContactUsComponent } from './components/dashboard/contact-us/contact-us.component';
 import { ServicesComponent } from './components/dashboard/services/services.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -16,10 +17,11 @@ import { ServicesComponent } from './components/dashboard/services/services.comp
     ContactUsComponent,
     ServicesComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
