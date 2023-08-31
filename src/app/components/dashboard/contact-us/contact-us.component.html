@@ -19,16 +19,19 @@
 
     <div class="form">
       <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <span class="error-msg" *ngIf="contactForm.get('name')?.invalid && submited">Name is required *</span>
         <input class="form-control" type="text" placeholder="Your name" formControlName="name">
+        <span class="error-msg" *ngIf="contactForm.get('email')?.invalid && submited">Email is required *</span>
         <input class="form-control" type="email" placeholder="Your email" formControlName="email">
+
         <textarea class="form-control" type="text" placeholder="Tell us about your project" formControlName="message"></textarea>
-        <!-- <div class="attachment">
-          <img src="assets/attachment.svg">
-          <span (click)="fileInput.click()" style="cursor: pointer;">Attachment</span>
-          <input type="file" (change)="uploadFile($event.target)" #fileInput style="display: none;">
-        </div> -->
-        <button type="submit">Send Request</button>
+        <button type="submit"  >
+          <i class="fa fa-spinner fa-pulse me-2"  *ngIf="submited"></i>Send Request</button>
       </form>
     </div>
   </div>
 </div>
+
+
+
+<!---->

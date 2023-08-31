@@ -12,23 +12,41 @@ export class ContactUsComponent implements OnInit {
   selectedSites: any[] = [];
   selectedBudget: any;
   contactForm: FormGroup;
+
+  submited: boolean = false;
   constructor(private formBuilder: FormBuilder, private emailService: EmailService) {
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required],
+      message: ['',],
       interests: ['']
     });
   }
 
   onSubmit() {
     if (this.contactForm.valid) {
+      this.submited = true;
+
       this.contactForm.get('interests')?.setValue(this.selectedSites);
       this.emailService.sendEmail(this.contactForm.value).subscribe(
         response => {
           console.log('Email sent successfully', response);
+          this.contactForm.patchValue({
+            name: '',
+            email: '',
+            message:'',
+          });
+          this.submited = false;
+
         },
         error => {
+          this.contactForm.patchValue({
+            name: '',
+            email: '',
+            message:'',
+          });
+          this.submited = false;
+
           console.error('Error sending email', error);
         }
       );

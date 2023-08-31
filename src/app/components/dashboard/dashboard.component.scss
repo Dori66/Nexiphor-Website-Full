@@ -17,6 +17,7 @@ nav {
   .nav-options {
     position: fixed;
     display: flex;
+    z-index: 9999;
     justify-content: flex-end;
     align-items: flex-start;
     color: white;
