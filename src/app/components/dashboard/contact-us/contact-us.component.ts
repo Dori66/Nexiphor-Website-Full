@@ -1,7 +1,7 @@
-import { FormBuilder , Validators } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 import { EmailService } from 'src/app/services/email.service';
 import { Component, OnInit } from '@angular/core';
-import {FormGroup} from "@angular/forms";
+import { FormGroup } from "@angular/forms";
 
 @Component({
   selector: 'app-contact-us',
@@ -12,8 +12,8 @@ export class ContactUsComponent implements OnInit {
   selectedSites: any[] = [];
   selectedBudget: any;
   contactForm: FormGroup;
-
   submited: boolean = false;
+  submitedSuccessful: boolean = false;
   constructor(private formBuilder: FormBuilder, private emailService: EmailService) {
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -26,7 +26,6 @@ export class ContactUsComponent implements OnInit {
   onSubmit() {
     if (this.contactForm.valid) {
       this.submited = true;
-
       this.contactForm.get('interests')?.setValue(this.selectedSites);
       this.emailService.sendEmail(this.contactForm.value).subscribe(
         response => {
@@ -34,19 +33,22 @@ export class ContactUsComponent implements OnInit {
           this.contactForm.patchValue({
             name: '',
             email: '',
-            message:'',
+            message: '',
           });
           this.submited = false;
-
+          this.submitedSuccessful = true;
         },
         error => {
           this.contactForm.patchValue({
             name: '',
             email: '',
-            message:'',
+            message: '',
           });
           this.submited = false;
-
+          this.submitedSuccessful = true;
+          setTimeout(() => {
+            this.submitedSuccessful = false;
+          }, 1500);
           console.error('Error sending email', error);
         }
       );
