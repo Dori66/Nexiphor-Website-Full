@@ -24,32 +24,24 @@ export class ContactUsComponent implements OnInit {
   }
 
   onSubmit() {
+    console.log(this.contactForm.valid);
+
     if (this.contactForm.valid) {
       this.submited = true;
       this.contactForm.get('interests')?.setValue(this.selectedSites);
       this.emailService.sendEmail(this.contactForm.value).subscribe(
-        response => {
-          console.log('Email sent successfully', response);
-          this.contactForm.patchValue({
-            name: '',
-            email: '',
-            message: '',
-          });
+        () => {
+          this.contactForm.reset();
           this.submited = false;
           this.submitedSuccessful = true;
         },
-        error => {
-          this.contactForm.patchValue({
-            name: '',
-            email: '',
-            message: '',
-          });
+        () => {
+          this.contactForm.reset();
           this.submited = false;
           this.submitedSuccessful = true;
           setTimeout(() => {
             this.submitedSuccessful = false;
           }, 1500);
-          console.error('Error sending email', error);
         }
       );
     } else {
