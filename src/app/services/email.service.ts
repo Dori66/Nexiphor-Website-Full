@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class EmailService {
 
-  private apiUrl = 'https://nexiphor-api-com.onrender.com/send-email';
+  private apiUrl = 'https://nexiphor.onrender.com/send-email';
 
   constructor(private http: HttpClient) { }
 
