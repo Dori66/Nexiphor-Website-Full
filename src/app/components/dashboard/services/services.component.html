@@ -3,7 +3,8 @@
     <h1 class="text-center mb-4">Our Services</h1>
     <div class="row">
       <div class="col-md-4 mb-4" *ngFor="let service of services">
-        <div class="card-container" onmouseover="hoverEffect(this)">
+        <div class="card-container" (mouseover)="hoverEffect(service)"
+          (click)="activeService === service ? closeCard() : (activeService = service)">
           <div class="circle-container outer-circle mx-auto">
             <div class="rounded-circle d-flex justify-content-center align-items-center">
               <div class="small-circle">

@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./services.component.scss']
 })
 export class ServicesComponent {
+  activeService: any | null = null;
   public services = [
     {
       title: 'Web Development',
@@ -38,24 +39,25 @@ export class ServicesComponent {
       icon: 'cloud'
     }
   ];
+
   /**
    * @name hoverEffect
    * @param event - Mouse Event
    * @description - it helps to manage the hover part on the small screens.
    */
-  hoverEffect(event: MouseEvent): void {
-    const element = event.currentTarget as HTMLElement;
-    if (window.matchMedia("(hover: none)").matches) {
-      const circleContainer = element.querySelector('.circle-container.outer-circle') as HTMLElement;
-      const smallCircle = element.querySelector('.small-circle') as HTMLElement;
-      const cardContent = element.querySelector('.card-content') as HTMLElement;
-
-      if (circleContainer && smallCircle && cardContent) {
-        circleContainer.style.transform = "scale(1.1) rotate(10deg)";
-        smallCircle.style.transform = "scale(0.8) rotate(-10deg)";
-        cardContent.style.maxHeight = "500px";
-        cardContent.style.opacity = "1";
+  hoverEffect(service: any): void {
+    if (window.matchMedia('(hover: none)').matches) {
+      if (this.activeService !== service) {
+        this.activeService = service;
       }
     }
+  }
+
+  /**
+   * @name closeCardt
+   * @description - it helps to close the card in small screens.
+   */
+  closeCard(): void {
+    this.activeService = null;
   }
 }
