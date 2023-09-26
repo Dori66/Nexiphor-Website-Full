@@ -10,6 +10,7 @@ import {ServicesComponent} from './components/dashboard/services/services.compon
 import {HttpClientModule} from '@angular/common/http';
 import {ReactiveFormsModule} from '@angular/forms';
 import {FormsModule} from '@angular/forms';
+import { ReferenceComponent } from './components/dashboard/reference/reference.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {FormsModule} from '@angular/forms';
     DashboardComponent,
     HomeComponent,
     ContactUsComponent,
-    ServicesComponent
+    ServicesComponent,
+    ReferenceComponent
   ],
   imports: [
     BrowserModule,

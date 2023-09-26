@@ -200,7 +200,7 @@ nav {
       color: white;
 
       .active {
-        color: #7FD858;
+        color: #7FD858 !important;
         transition: 0.3s;
       }
 
@@ -218,6 +218,7 @@ nav {
         margin-right: 2px;
         cursor: pointer;
         transition: 0.3s;
+        color: white !important;
       }
 
       span:hover {

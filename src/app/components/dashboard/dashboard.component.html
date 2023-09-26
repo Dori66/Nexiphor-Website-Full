@@ -1,11 +1,11 @@
 <nav>
   <img class="logo" src="assets/svg/fulllogo_transparent_nobuffer.png">
   <div class="nav-options" [ngClass]="{ 'nav-options-contact': direction == 'contact' }">
-    <span class="animate__animated animate__fadeInDown" [ngClass]="{ active: selectedMenuOption == 'home' }"
+    <span class="animate__animated animate__fadeInDown" [ngClass]="{ 'active': selectedMenuOption === 'home' }"
       (click)="menuSelect('home')">HOME</span>
-    <span class="animate__animated animate__fadeInDown" [ngClass]="{ active: selectedMenuOption == 'services' }"
+    <span class="animate__animated animate__fadeInDown" [ngClass]="{ 'active': selectedMenuOption === 'services' }"
       (click)="menuSelect('services')">SERVICE</span>
-    <span class="animate__animated animate__fadeInDown" [ngClass]="{ active: selectedMenuOption == 'contact' }"
+    <span class="animate__animated animate__fadeInDown" [ngClass]="{ 'active': selectedMenuOption === 'contact' }"
       (click)="menuSelect('contact')">
       CONTACT</span>
   </div>
@@ -16,6 +16,9 @@
   </div>
   <div #services>
     <app-services></app-services>
+  </div>
+  <div #reference>
+    <app-reference></app-reference>
   </div>
   <div #contact>
     <app-contact-us></app-contact-us>
