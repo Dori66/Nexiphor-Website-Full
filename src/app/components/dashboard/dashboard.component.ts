@@ -25,17 +25,13 @@ export class DashboardComponent {
 
     const serviceCallBack: IntersectionObserverCallback = (entries, observer) => {
       entries.forEach(entry => {
-        console.log('DORI')
         if (entry.isIntersecting) {
           this.selectedMenuOption = 'services'
+          // You can perform any Angular-specific actions here
         }
       });
     };
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        entry.target
-      })
-    });
+    const observer = new IntersectionObserver(serviceCallBack, options);
     observer.observe(this.services!.nativeElement);
 
     const contactCallBack: IntersectionObserverCallback = (entries, observer) => {
