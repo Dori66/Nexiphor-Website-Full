@@ -8,6 +8,9 @@
     <span class="animate__animated animate__fadeInDown" [ngClass]="{ active: selectedMenuOption == 'contact' }"
       (click)="menuSelect('contact')">
       CONTACT</span>
+    <span class="animate__animated animate__fadeInDown" [ngClass]="{ active: selectedMenuOption == 'ourwork' }"
+      (click)="menuSelect('ourwork')">
+      OUR WORK</span>
   </div>
 </nav>
 <div class="main-container">
@@ -20,14 +23,17 @@
   <div #contact>
     <app-contact-us></app-contact-us>
   </div>
+  <div #ourwork>
+    <app-our-work></app-our-work>
+  </div>
 </div>
 <div class="side-scroll" [style.opacity]="opacityValue" (click)="menuSelect('contact')">
   SCROLL FOR MORE <span>→</span>
 </div>
 <div class="background-footer">
   <footer>
-      <h1 class="title-caption">WHERE IMAGINATIONS MEETS INNOVATION</h1>
-      <div class="footer-infos">
+    <h1 class="title-caption">WHERE IMAGINATIONS MEETS INNOVATION</h1>
+    <div class="footer-infos">
       <div class="">
         <a href="https://www.instagram.com/nexiphor/">
           <img src="../../../assets/icons/instagram.svg" alt="" />
@@ -40,7 +46,7 @@
         </a>
       </div>
       <div class="email-container">
-        <span >
+        <span>
           <a href="mailto:contact@nexiphor.com" class="text-white" style="text-decoration: none">
             contact@nexiphor.com
           </a></span>

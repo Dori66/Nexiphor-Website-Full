@@ -15,6 +15,7 @@ export class DashboardComponent {
   @ViewChild('services', { static: false }) services?: ElementRef;
   @ViewChild('home', { static: true }) home?: ElementRef;
   @ViewChild('contact', { static: true }) contact?: ElementRef;
+  @ViewChild('ourwork', { static: true }) ourwork?: ElementRef;
 
   ngAfterViewInit(): void {
     const options = {

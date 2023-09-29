@@ -11,13 +11,13 @@ nav {
     width: 50px;
     position: fixed;
     top: 1%;
-    z-index: 9999;
+    z-index: 1000;
   }
 
   .nav-options {
     position: fixed;
     display: flex;
-    z-index: 9999;
+    z-index: 1000;
     justify-content: flex-end;
     align-items: flex-start;
     color: white;

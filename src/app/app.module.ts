@@ -10,6 +10,8 @@ import {ServicesComponent} from './components/dashboard/services/services.compon
 import {HttpClientModule} from '@angular/common/http';
 import {ReactiveFormsModule} from '@angular/forms';
 import {FormsModule} from '@angular/forms';
+import { OurWorkComponent } from './components/dashboard/our-work/our-work.component';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,16 @@ import {FormsModule} from '@angular/forms';
     DashboardComponent,
     HomeComponent,
     ContactUsComponent,
-    ServicesComponent
+    ServicesComponent,
+    OurWorkComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
