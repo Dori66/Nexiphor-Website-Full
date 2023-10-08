@@ -16,6 +16,7 @@ export class EmailService {
     return this.http.post(this.apiUrl, data);
   }
   warmUpServer(): Observable<any> {
-    return this.http.get(this.warmUpUrl);
+    // Specify the response type as 'text'
+    return this.http.get(this.warmUpUrl, { responseType: 'text' });
   }
 }
