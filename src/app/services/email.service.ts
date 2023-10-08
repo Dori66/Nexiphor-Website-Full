@@ -8,10 +8,14 @@ import { Observable } from 'rxjs';
 export class EmailService {
 
   private apiUrl = 'https://nexiphor.onrender.com/send-email';
+  private warmUpUrl = 'https://nexiphor.onrender.com/warm-up';
 
   constructor(private http: HttpClient) { }
 
   sendEmail(data: any): Observable<any> {
     return this.http.post(this.apiUrl, data);
+  }
+  warmUpServer(): Observable<any> {
+    return this.http.get(this.warmUpUrl);
   }
 }
