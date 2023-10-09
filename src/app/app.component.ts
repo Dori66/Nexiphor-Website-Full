@@ -11,7 +11,6 @@ export class AppComponent implements OnInit {
   title = 'Nexiphor';
   ngOnInit(): void {
     this.emailService.warmUpServer().subscribe(response => {
-      console.log('Server is warmed up:', response);
     });
   }
 }
