@@ -53,10 +53,6 @@ export class ContactUsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // Trigger the warm-up request when the application loads
-    this.emailService.warmUpServer().subscribe(response => {
-      console.log('Server is warmed up:', response);
-    });
   }
 
   addSite(site: any) {
