@@ -22,7 +22,7 @@ export class BlogsComponent {
         entry.target.classList.toggle('show',entry.isIntersecting)
       });
     },{
-      threshold: 0.3
+      threshold: 0.3,
     });
     blogs.forEach(blog => {
       observer.observe(blog)

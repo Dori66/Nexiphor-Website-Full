@@ -13,7 +13,7 @@ h1{
   position: relative;
   background: rgb(0, 49, 68);
   border-radius: 10px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  //transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   cursor: pointer;
   overflow: hidden;
   padding: 20px;
@@ -21,6 +21,14 @@ h1{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: 550ms;
+}
+.show{
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .circle-container {
