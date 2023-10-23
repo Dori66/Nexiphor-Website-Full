@@ -10,7 +10,16 @@
   padding: 20px;
 
 
+  .col{
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 550ms;
+  }
 
+  .show{
+    transform: translateX(0);
+    opacity: 1;
+  }
   .learn-more-button{
 
     background-color: #5baf41;
@@ -23,3 +32,5 @@
 
   }
 }
+
+
