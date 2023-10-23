@@ -11,6 +11,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {ReactiveFormsModule} from '@angular/forms';
 import {FormsModule} from '@angular/forms';
 import { ReferenceComponent } from './components/dashboard/reference/reference.component';
+import { BlogsComponent } from './components/dashboard/blogs/blogs.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { ReferenceComponent } from './components/dashboard/reference/reference.c
     HomeComponent,
     ContactUsComponent,
     ServicesComponent,
-    ReferenceComponent
+    ReferenceComponent,
+    BlogsComponent
   ],
   imports: [
     BrowserModule,
