@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-reference',
-  templateUrl: './reference.component.html',
-  styleUrls: ['./reference.component.scss']
+  selector: 'app-blogs',
+  templateUrl: './blogs.component.html',
+  styleUrls: ['./blogs.component.scss']
 })
-export class ReferenceComponent {
+export class BlogsComponent {
+
 
 
   ngAfterViewInit(){
@@ -13,7 +14,7 @@ export class ReferenceComponent {
       root: null,
       rootMargin: '0px',
     };
-    const references = document.querySelectorAll('.reference-message')
+    const blogs = document.querySelectorAll('.col')
 
 
     const observer: IntersectionObserver = new IntersectionObserver((entries: any) => {
@@ -23,9 +24,8 @@ export class ReferenceComponent {
     },{
       threshold: 0.3,
     });
-    references.forEach(reference => {
-      observer.observe(reference)
+    blogs.forEach(blog => {
+      observer.observe(blog)
     })
   }
-
 }

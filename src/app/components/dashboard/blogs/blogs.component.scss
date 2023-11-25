@@ -1,0 +1,36 @@
+.title{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  color: #7FD858;
+  font-family: 'League Gothic', b, serif;
+
+}
+.blogs-container{
+  padding: 20px;
+
+
+  .col{
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 550ms;
+  }
+
+  .show{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .learn-more-button{
+
+    background-color: #5baf41;
+    padding: 5px;
+    border: none;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+
+  }
+}
+
+

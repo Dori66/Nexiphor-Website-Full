@@ -23,6 +23,7 @@ export class DashboardComponent {
       threshold: 0.1
     };
 
+
     const serviceCallBack: IntersectionObserverCallback = (entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
