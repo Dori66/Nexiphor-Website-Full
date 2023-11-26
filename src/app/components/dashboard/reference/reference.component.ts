@@ -8,24 +8,24 @@ import { Component } from '@angular/core';
 export class ReferenceComponent {
 
 
-  ngAfterViewInit(){
-    const options = {
-      root: null,
-      rootMargin: '0px',
-    };
-    const references = document.querySelectorAll('.reference-message')
-
-
-    const observer: IntersectionObserver = new IntersectionObserver((entries: any) => {
-      entries.forEach((entry: any) => {
-        entry.target.classList.toggle('show',entry.isIntersecting)
-      });
-    },{
-      threshold: 0.3,
-    });
-    references.forEach(reference => {
-      observer.observe(reference)
-    })
-  }
+  // ngAfterViewInit(){
+  //   const options = {
+  //     root: null,
+  //     rootMargin: '0px',
+  //   };
+  //   const references = document.querySelectorAll('.reference-message')
+  //
+  //
+  //   const observer: IntersectionObserver = new IntersectionObserver((entries: any) => {
+  //     entries.forEach((entry: any) => {
+  //       entry.target.classList.toggle('show',entry.isIntersecting)
+  //     });
+  //   },{
+  //     threshold: 0.3,
+  //   });
+  //   references.forEach(reference => {
+  //     observer.observe(reference)
+  //   })
+  // }
 
 }
