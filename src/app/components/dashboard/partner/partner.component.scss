@@ -1,0 +1,75 @@
+img{
+  width: 90%;
+}
+
+.container{
+
+
+  opacity: 0;
+  transform: translateX(100px);
+  transition: 550ms;
+
+  .col-sm-6{
+
+  }
+
+  .header, header-2{
+    color: #7fd858;
+    font-family: 'League Gothic', b, serif;
+    font-size: 50px;
+  }
+  .header-2{
+    color: white;
+    font-weight: 800;
+    margin-bottom: 50px;
+  }
+
+  padding: 20px ;
+  .product-img{
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .header-info{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .benefits-title{
+    color: white;
+    display: flex;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .benefit{
+    padding: 20px;
+    background-color: white;
+    border: 5px solid #7FD858;
+    border-radius: 10px;
+
+    span{
+      align-items: self-end;
+    }
+
+    img{
+      width: 10%;
+    }
+
+
+    .benefit-one-title{
+      display: flex;
+      font-size: 25px;
+      color: rgb(0, 49, 68);
+      font-weight: 800;
+      margin-bottom: 25px;
+    }
+    p{
+      text-align: left;
+      color: rgb(0, 49, 68);
+    }
+  }
+
+}

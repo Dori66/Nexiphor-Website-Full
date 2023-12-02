@@ -12,6 +12,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {FormsModule} from '@angular/forms';
 import { ReferenceComponent } from './components/dashboard/reference/reference.component';
 import { BlogsComponent } from './components/dashboard/blogs/blogs.component';
+import { PartnerComponent } from './components/dashboard/partner/partner.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { BlogsComponent } from './components/dashboard/blogs/blogs.component';
     ContactUsComponent,
     ServicesComponent,
     ReferenceComponent,
-    BlogsComponent
+    BlogsComponent,
+    PartnerComponent
   ],
   imports: [
     BrowserModule,
