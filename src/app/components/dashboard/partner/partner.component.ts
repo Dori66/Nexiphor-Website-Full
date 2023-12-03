@@ -21,7 +21,7 @@ export class PartnerComponent {
         entry.target.classList.toggle('show',entry.isIntersecting)
       });
     },{
-      threshold: 0.3,
+      threshold: 0.1,
     });
     partnerParent.forEach(partnerParent => {
       observer.observe(partnerParent)
