@@ -23,8 +23,13 @@ h1{
   justify-content: center;
 
   opacity: 0;
-  transform: translateX(-100px);
   transition: 550ms;
+}
+.top-services-class{
+  transform: translateX(-100px);
+}
+.bottom-services-class{
+  transform: translateX(100px);
 }
 .show{
   opacity: 1;

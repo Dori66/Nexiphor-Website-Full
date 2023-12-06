@@ -14,7 +14,9 @@ export class BlogsComponent {
       root: null,
       rootMargin: '0px',
     };
-    const blogs = document.querySelectorAll('.col')
+    const thirdBlog = document.querySelectorAll('.col-right')
+    const firstBlog = document.querySelectorAll('.col-left')
+    const secondBlog = document.querySelectorAll('.col-middle')
 
 
     const observer: IntersectionObserver = new IntersectionObserver((entries: any) => {
@@ -24,8 +26,14 @@ export class BlogsComponent {
     },{
       threshold: 0.3,
     });
-    blogs.forEach(blog => {
-      observer.observe(blog)
+    thirdBlog.forEach(thirdBlog => {
+      observer.observe(thirdBlog)
+    })
+    firstBlog.forEach(firstBlog => {
+      observer.observe(firstBlog)
+    })
+    secondBlog.forEach(secondBlog => {
+      observer.observe(secondBlog)
     })
   }
 }

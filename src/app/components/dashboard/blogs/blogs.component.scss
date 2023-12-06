@@ -12,8 +12,16 @@
 
   .col{
     opacity: 0;
-    transform: translateX(100px);
     transition: 550ms;
+  }
+  .col-left{
+    transform: translateX(-100px);
+  }
+  .col-middle{
+    transition: 1000ms;
+  }
+  .col-right{
+    transform: translateX(100px);
   }
 
   .show{

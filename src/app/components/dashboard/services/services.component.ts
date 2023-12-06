@@ -46,27 +46,10 @@ export class ServicesComponent {
       root: null,
       rootMargin: '0px',
     };
-    const services = document.querySelectorAll('.card-container')
-
-
-    const observer: IntersectionObserver = new IntersectionObserver((entries: any) => {
-      entries.forEach((entry: any) => {
-        entry.target.classList.toggle('show',entry.isIntersecting)
-      });
-    },{
-      threshold: 0.3,
-    });
-    services.forEach(service => {
-      observer.observe(service)
-    })
+    this.takeElements()
   }
 
 
-  /**
-   * @name hoverEffect
-   * @param event - Mouse Event
-   * @description - it helps to manage the hover part on the small screens.
-   */
   hoverEffect(service: any): void {
     if (window.matchMedia('(hover: none)').matches) {
       if (this.activeService !== service) {
@@ -75,10 +58,38 @@ export class ServicesComponent {
     }
   }
 
-  /**
-   * @name closeCardt
-   * @description - it helps to close the card in small screens.
-   */
+  takeElements(){
+    const firstService = document.querySelectorAll('.card-container').item(0)
+    const secondService = document.querySelectorAll('.card-container').item(1)
+    const thirdService = document.querySelectorAll('.card-container').item(2)
+    const fourthService = document.querySelectorAll('.card-container').item(3)
+    const fifthService = document.querySelectorAll('.card-container').item(4)
+    const sixthService = document.querySelectorAll('.card-container').item(5)
+
+    firstService.classList.add('top-services-class')
+    secondService.classList.add('top-services-class')
+    thirdService.classList.add('top-services-class')
+
+    fourthService.classList.add('bottom-services-class')
+    fifthService.classList.add('bottom-services-class')
+    sixthService.classList.add('bottom-services-class')
+
+    const observer: IntersectionObserver = new IntersectionObserver((entries: any) => {
+      entries.forEach((entry: any) => {
+        entry.target.classList.toggle('show',entry.isIntersecting)
+      });
+    },{
+      threshold: 0.3,
+    });
+
+    observer.observe(firstService)
+    observer.observe(secondService)
+    observer.observe(thirdService)
+    observer.observe(fourthService)
+    observer.observe(fifthService)
+    observer.observe(sixthService)
+  }
+
   closeCard(): void {
     this.activeService = null;
   }
