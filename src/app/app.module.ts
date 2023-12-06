@@ -13,6 +13,7 @@ import {FormsModule} from '@angular/forms';
 import { ReferenceComponent } from './components/dashboard/reference/reference.component';
 import { BlogsComponent } from './components/dashboard/blogs/blogs.component';
 import { PartnerComponent } from './components/dashboard/partner/partner.component';
+import { WbnwComponent } from './components/dashboard/wbnw/wbnw.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { PartnerComponent } from './components/dashboard/partner/partner.compone
     ServicesComponent,
     ReferenceComponent,
     BlogsComponent,
-    PartnerComponent
+    PartnerComponent,
+    WbnwComponent
   ],
   imports: [
     BrowserModule,
