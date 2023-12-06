@@ -5,9 +5,11 @@ img{
 .container{
 
 
-  opacity: 0;
-  transform: translateX(100px);
-  transition: 550ms;
+  .row{
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 550ms;
+  }
 
   .col-sm-6{
 
@@ -49,7 +51,9 @@ img{
     background-color: white;
     border: 5px solid #7FD858;
     border-radius: 10px;
-
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 550ms;
     span{
       align-items: self-end;
     }

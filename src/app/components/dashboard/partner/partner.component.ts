@@ -13,7 +13,8 @@ export class PartnerComponent {
       root: null,
       rootMargin: '0px',
     };
-    const partnerParent = document.querySelectorAll('.container')
+    const partnerParent = document.querySelectorAll('.row')
+    const benefit = document.querySelectorAll('.benefit')
 
 
     const observer: IntersectionObserver = new IntersectionObserver((entries: any) => {
@@ -25,6 +26,9 @@ export class PartnerComponent {
     });
     partnerParent.forEach(partnerParent => {
       observer.observe(partnerParent)
+    })
+    benefit.forEach(benefit => {
+      observer.observe(benefit)
     })
   }
 
