@@ -11,7 +11,8 @@ body, html{
   transition:  0.3s ease;
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
-
+  scroll-behavior: smooth;
+  
 }
 .show{
   opacity: 1 !important;
