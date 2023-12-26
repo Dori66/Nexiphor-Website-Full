@@ -41,17 +41,17 @@ export class ServicesComponent {
     {
       title: 'Content Management System',
       description: 'At Nexiphor, we specialize in CMS solutions that empower you to effortlessly manage and enhance your online content. With user-friendly tools and expert support, we simplify your digital journey. Discover the power of effective content management with us today.',
-      icon: 'pen'
+      icon: 'handshake-o'
     },
     {
       title: 'SEO Optimization',
       description: 'At Nexiphor, we excel in SEO. Boost your online visibility, drive traffic, and maximize your presence with our expert SEO services. Let\'s elevate your digital strategy today!',
-      icon: 'seo'
+      icon: 'newspaper-o'
     },
     {
       title: 'Legacy System Modernization',
       description: 'Upgrade your outdated systems with our modernization expertise. Boost performance, reduce costs, and enhance security with our tailored solutions. Unlock the potential of your legacy systems for a more agile and efficient future. Nexiphor',
-      icon: 'legacy'
+      icon: 'wpexplorer'
     }
   ];
 
