@@ -37,6 +37,21 @@ export class ServicesComponent {
       title: 'Cloud Computing Services',
       description: 'Unlock the power of the cloud with our cutting-edge solutions. We help you migrate, manage, and optimize your applications on cloud platforms, ensuring scalability, reliability, and cost-efficiency.',
       icon: 'cloud'
+    },
+    {
+      title: 'Content Management System',
+      description: 'At Nexiphor, we specialize in CMS solutions that empower you to effortlessly manage and enhance your online content. With user-friendly tools and expert support, we simplify your digital journey. Discover the power of effective content management with us today.',
+      icon: 'pen'
+    },
+    {
+      title: 'SEO Optimization',
+      description: 'At Nexiphor, we excel in SEO. Boost your online visibility, drive traffic, and maximize your presence with our expert SEO services. Let\'s elevate your digital strategy today!',
+      icon: 'seo'
+    },
+    {
+      title: 'Legacy System Modernization',
+      description: 'Upgrade your outdated systems with our modernization expertise. Boost performance, reduce costs, and enhance security with our tailored solutions. Unlock the potential of your legacy systems for a more agile and efficient future. Nexiphor',
+      icon: 'legacy'
     }
   ];
 
@@ -59,20 +74,26 @@ export class ServicesComponent {
   }
 
   takeElements(){
-    const firstService = document.querySelectorAll('.card-container').item(0)
-    const secondService = document.querySelectorAll('.card-container').item(1)
-    const thirdService = document.querySelectorAll('.card-container').item(2)
-    const fourthService = document.querySelectorAll('.card-container').item(3)
-    const fifthService = document.querySelectorAll('.card-container').item(4)
-    const sixthService = document.querySelectorAll('.card-container').item(5)
+    const webDevelopmentService = document.querySelectorAll('.card-container').item(0)
+    const mobileAppDevelopmentService = document.querySelectorAll('.card-container').item(1)
+    const uxuiService = document.querySelectorAll('.card-container').item(2)
+    const customSoftwareService = document.querySelectorAll('.card-container').item(3)
+    const ecommerceDevelopmentService = document.querySelectorAll('.card-container').item(4)
+    const cloudService = document.querySelectorAll('.card-container').item(5)
+    const cmsService = document.querySelectorAll('.card-container').item(6)
+    const seoService = document.querySelectorAll('.card-container').item(7)
+    const systemModernization = document.querySelectorAll('.card-container').item(8)
 
-    firstService.classList.add('top-services-class')
-    secondService.classList.add('top-services-class')
-    thirdService.classList.add('top-services-class')
+    webDevelopmentService.classList.add('top-services-class')
+    mobileAppDevelopmentService.classList.add('top-services-class')
+    uxuiService.classList.add('top-services-class')
 
-    fourthService.classList.add('bottom-services-class')
-    fifthService.classList.add('bottom-services-class')
-    sixthService.classList.add('bottom-services-class')
+    customSoftwareService.classList.add('bottom-services-class')
+    ecommerceDevelopmentService.classList.add('bottom-services-class')
+    cloudService.classList.add('bottom-services-class')
+    cmsService.classList.add('bottom-services-class')
+    seoService.classList.add('bottom-services-class')
+    systemModernization.classList.add('bottom-services-class')
 
     const observer: IntersectionObserver = new IntersectionObserver((entries: any) => {
       entries.forEach((entry: any) => {
@@ -82,12 +103,15 @@ export class ServicesComponent {
       threshold: 0.3,
     });
 
-    observer.observe(firstService)
-    observer.observe(secondService)
-    observer.observe(thirdService)
-    observer.observe(fourthService)
-    observer.observe(fifthService)
-    observer.observe(sixthService)
+    observer.observe(webDevelopmentService)
+    observer.observe(mobileAppDevelopmentService)
+    observer.observe(uxuiService)
+    observer.observe(customSoftwareService)
+    observer.observe(ecommerceDevelopmentService)
+    observer.observe(cloudService)
+    observer.observe(cmsService)
+    observer.observe(seoService)
+    observer.observe(systemModernization)
   }
 
   closeCard(): void {

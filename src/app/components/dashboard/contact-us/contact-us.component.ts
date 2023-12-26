@@ -10,7 +10,6 @@ import { FormGroup } from "@angular/forms";
 })
 export class ContactUsComponent implements OnInit {
   selectedSites: any[] = [];
-  selectedBudget: any;
   contactForm: FormGroup;
   submited: boolean = false;
   submitedSuccessful: boolean = false;
